@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Surveillance Transfo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Surveillance à distance du Transformateur</h1>
+
+  <div class="chart-container">
+    <h2>Température</h2>
+    <iframe src="https://thingspeak.com/channels/TON_ID/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&type=line&title=Temp%C3%A9rature&yaxis=°C" frameborder="0"></iframe>
+
+    <h2>Courant</h2>
+    <iframe src="https://thingspeak.com/channels/TON_ID/charts/2?bgcolor=%23ffffff&color=%2300aaff&dynamic=true&type=line&title=Courant&yaxis=A" frameborder="0"></iframe>
+
+    <h2>Pression</h2>
+    <iframe src="https://thingspeak.com/channels/TON_ID/charts/3?bgcolor=%23ffffff&color=%2333cc33&dynamic=true&type=line&title=Pression&yaxis=Bar" frameborder="0"></iframe>
+
+    <h2>Niveau d'huile</h2>
+    <iframe src="https://thingspeak.com/channels/TON_ID/charts/4?bgcolor=%23ffffff&color=%23ff9900&dynamic=true&type=line&title=Niveau%20d'huile&yaxis=%25" frameborder="0"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
